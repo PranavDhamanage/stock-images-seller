@@ -1,0 +1,31 @@
+.header {
+  display: grid;
+  grid-template-columns: 180px 1fr 1fr;
+  grid-template-areas: "title . cart_icon";
+  padding: 1em 1.5em;
+  background-color: #f47b6e;
+  box-shadow: 0px 2px 10px -4px rgba(21, 6, 5, 1);
+}
+
+.header-title,
+.cart-icon {
+  color: whitesmoke;
+  align-self: center;
+  &:hover {
+    color: rgb(137, 209, 235);
+  }
+}
+
+.header-title {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  grid-area: title;
+  justify-self: center;
+}
+
+.cart-icon {
+  grid-area: cart_icon;
+  justify-self: end;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.cart-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.cart-img-container {
+  position: relative;
+}
+
+.cart-item-img {
+  width: 300px;
+  height: 200px;
+  justify-self: start;
+  align-self: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+  color: #2c4ca5;
+  cursor: pointer;
+  &:hover {
+    color: rgb(79, 188, 224);
+  }
+}
+
+.price {
+  grid-column: 4/-1;
+  justify-self: right;
+  align-self: start;
+  margin-right: 1em;
+  font-size: 1.5rem;
+}

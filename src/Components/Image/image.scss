@@ -1,0 +1,51 @@
+$blue: #7fcfe0;
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+// container
+.image-container {
+  position: relative;
+}
+
+// on top image icons
+.favourite-icon,
+.cartadd-icon,
+.added-to-cart-icon {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+}
+
+.favourite-icon {
+  left: 5px;
+  color: #ea453c;
+}
+
+.cartadd-icon {
+  right: 5px;
+  color: $blue;
+}
+
+.added-to-cart-icon {
+  right: 5px;
+  color: #2c4ca5;
+}
+
+// image size deciders
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
