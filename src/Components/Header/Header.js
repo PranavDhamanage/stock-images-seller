@@ -7,7 +7,7 @@ import "./header.css";
 
 function Header() {
   const { cartItems } = useContext(PhotosContext);
-
+  console.log("in header");
   return (
     <div className="header">
       <Link to="/">
